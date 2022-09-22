@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<persistence>
+    <persistence-unit name="tareasDS" transaction-type="JTA">
+        <jta-data-source>java:/tareasDS</jta-data-source>
+
+        <!-- Agregamos la clase TareaEntity como Entity -->
+        <class>cic.diplojava.myapp.ejb.modelo.TareaEntity</class>
+
+        <!-- Solo va a tomar las clases que listemos en este archivo -->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="validate" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+        </properties>
+    </persistence-unit>
+</persistence>

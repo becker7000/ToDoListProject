@@ -1,0 +1,89 @@
+
+:root{
+    --black: #211d1d;
+    --white: #e2e2e2;
+    --gray: #444444;
+    --blue-forte: #45818e;
+    --blue-light: #76a5af;
+    --ssm: 14px;
+    --sm: 18px;
+    --md: 26px;
+    --lg: 36px;
+}
+
+body{
+    padding: 40px;
+    font-family: Arial;
+}
+
+.colortexto{
+    color: darkgreen;
+}
+
+.centrartexto{
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 20%;
+}
+
+
+.navbar{
+    width: 30%;
+    margin: 12px 40px;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    height: 40px;
+    margin: 4px;
+    padding: 0px;
+    overflow: hidden;
+    align-items: center;
+    background-color: var(--gray);
+    border-radius: 16px;
+}
+
+.navbar li{
+    display: inline;
+    align-items: center;
+}
+
+.navbar li a {
+    display: inline;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    top: 12px;
+}
+
+.navbar li a:hover {
+    background-color: var(--black);
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 30% 50%;
+}
+
+.formularioTareas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    color: green;
+}
+
+.input{
+    margin: 20px;
+    padding: 12px;
+}
+
+.listarTareas{
+    text-align: center;
+    align-items: center;
+}
